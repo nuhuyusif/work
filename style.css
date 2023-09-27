@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+
+/* screen Responsiveness */
+@media only screen and (max-width: 660px)
+{
+    .main-container{
+         width: 90%; 
+         margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+   .main-container .sedans {
+        width: 200px;
+        height: 400px;
+        flex-shrink: 0;
+        border-radius: 8px 8px 0px 0px ;
+        background: #E28625;
+        padding: 20px;   
+    }
+
+    .main-container .luxury {
+        width: 200px;
+        height: 400px;
+        flex-shrink: 0;
+        border-radius: 0px 0px 8px 8px;
+        background: #004140;
+        padding: 20px;
+    
+    }
+    
+}
+
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 40%px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.sedans {
+    width: 200px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 8px 0px 0px 8px ;
+    background: #E28625;
+    padding: 20px;   
+}
+
+.suvs {
+    width: 200px;
+    height: 400px;
+    flex-shrink: 0;
+    background: #006971;
+    padding: 20px;
+}
+
+.luxury {
+    width: 200px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 0px 8px 8px 0px;
+    background: #004140;
+    padding: 20px;
+
+}
+
+h1 {
+color: #F2F2F2;
+font-family: Big Shoulders Display;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.sedans-text p {
+    color: #FFF;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+.suvs-text p {
+    color: #FFF;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+.luxury-text p {
+    color: #FFF;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+.sedans button {
+    width: 130px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: solid 0px;
+    background: #F2F2F2;
+    color: #E28625;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+.suvs button {
+    width: 130px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: solid 0px;
+    background: #F2F2F2;
+    color: #006971;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+.luxury button {
+    width: 130px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: solid 0px;
+    background: #F2F2F2;
+    color: #004140;
+    margin-top: 53px;
+    cursor: pointer;
+}
+
+.sedans button:hover{
+    background-color:  #E28625;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.suvs button:hover{
+    background-color:  #006971;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.luxury button:hover{
+    background-color:  #004140;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
